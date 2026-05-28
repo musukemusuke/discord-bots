@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Discord Bots</title>
+    <link href="https://cdnfonts.com" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'gg sans', 'Segoe UI', Tahoma, Geneva, Verdana, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', sans-serif;
+            background: #313338; 
+            color: #dbdee1;     
+            margin: 0; 
+            padding: 40px 20px; 
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: #f2f3f5; font-size: 2.5rem; font-weight: 800; margin-bottom: 5px; }
+        .subtitle { text-align: center; color: #949ba4; margin-bottom: 40px; font-size: 1rem; }
+        .bot-list { display: flex; flex-direction: column; gap: 20px; }
+        
+        .bot-card { 
+            background: #2b2d31; 
+            padding: 25px; 
+            border-radius: 8px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+            gap: 25px;
+        }
+        
+        .bot-info { 
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-grow: 1;
+        }
+        
+        .bot-name { font-size: 1.6rem; font-weight: 700; color: #f2f3f5; margin: 0 0 5px 0; }
+        .bot-desc { color: #b5bac1; font-size: 0.95rem; line-height: 1.6; }
+        .bot-desc p { margin: 0; }
+        
+        @media (max-width: 768px) {
+            .bot-card { flex-direction: column; align-items: flex-start; gap: 20px; }
+            .bot-link { width: 100%; box-sizing: border-box; }
+        }
+        
+        .bot-link { 
+            background: #5865f2; 
+            color: white; 
+            text-decoration: none; 
+            padding: 12px 24px; 
+            border-radius: 3px; 
+            font-size: 0.95rem; 
+            font-weight: 600; 
+            text-align: center; 
+            transition: background 0.1s; 
+            white-space: nowrap; 
+        }
+        .bot-link:hover { background: #4752c4; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 🟢 ブラウザのタブ名と大見出しを「My Discord Bots」に完全統一しました -->
+    <h1>My Discord Bots</h1>
+    <p class="subtitle">むすけが作成したDiscord Botの一覧です。ご自由にサーバーへ招待してください！</p>
+
+    <div class="bot-list">
+        
+        <div class="bot-card">
+            <div class="bot-info">
+                <div class="bot-name">貴方の想い</div>
+                
+                <div class="bot-desc">
+                    <p>「あの人にこの気持ちを伝えたいけれど、やっぱり怖い、不安、恥ずかしい……」そんな胸の奥にしまい込んだ本音を、あなたの代わりに相手のDMへそっと届けるBotです。直接言うのは躊躇われる感謝や、文字だからこそ伝えられる大切なメッセージを形にします。</p>
+                </div>
+            </div>
+            <a href="https://discord.com" target="_blank" class="bot-link">サーバーに招待する</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
