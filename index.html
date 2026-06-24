@@ -2,32 +2,19 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <!-- スマホでの画面崩れを絶対に防ぐ設定 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Discord Bots</title>
-    
-    <!-- 🟢 Discord公式フォント（gg sans）を読み込む設定を戻しました -->
-    <link href="https://cdnfonts.com" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     <style>
         body { 
-            /* 🟢 英字はgg sans、日本語はDiscord公式と同じ優先順位のゴシック体です */
-            font-family: 'gg sans', 'Segoe UI', Tahoma, Geneva, Verdana, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', sans-serif;
+            font-family: 'Zen Kaku Gothic New', 'gg sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #313338; 
             color: #dbdee1;     
             margin: 0; 
             padding: 40px 20px; 
-            -webkit-font-smoothing: antialiased;
         }
         .container { max-width: 800px; margin: 0 auto; }
-        
-        h1 { 
-            text-align: center; 
-            color: #f2f3f5; 
-            font-size: 2.5rem; 
-            font-weight: 800;
-            margin-bottom: 5px; 
-        }
+        h1 { text-align: center; color: #f2f3f5; font-size: 2.5rem; font-weight: 800; margin-bottom: 5px; }
         .subtitle { text-align: center; color: #949ba4; margin-bottom: 40px; font-size: 1rem; }
         .bot-list { display: flex; flex-direction: column; gap: 20px; }
         
@@ -40,6 +27,12 @@
             align-items: center; 
             box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
             gap: 25px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .bot-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.4);
         }
         
         .bot-info { 
@@ -53,23 +46,9 @@
         .bot-desc { color: #b5bac1; font-size: 0.95rem; line-height: 1.6; }
         .bot-desc p { margin: 0; }
         
-        /* スマホ（画面幅768px以下）用の調整 */
         @media (max-width: 768px) {
-            body { padding: 20px 15px; }
-            h1 { font-size: 2rem; }
-            .subtitle { margin-bottom: 25px; font-size: 0.9rem; }
-            .bot-card { 
-                flex-direction: column; 
-                align-items: flex-start; 
-                gap: 15px; 
-                padding: 20px; 
-            }
-            .bot-info { width: 100%; }
-            .bot-link { 
-                width: 100%; 
-                box-sizing: border-box; 
-                padding: 14px; 
-            }
+            .bot-card { flex-direction: column; align-items: flex-start; gap: 20px; }
+            .bot-link { width: 100%; box-sizing: border-box; }
         }
         
         .bot-link { 
@@ -90,6 +69,7 @@
 <body>
 
 <div class="container">
+    <!-- 🟢 ブラウザのタブ名と大見出しを「My Discord Bots」に完全統一しました -->
     <h1>My Discord Bots</h1>
     <p class="subtitle">むすけが作成したDiscord Botの一覧です。ご自由にサーバーへ招待してください！</p>
 
@@ -103,7 +83,17 @@
                     <p>「あの人にこの気持ちを伝えたいけれど、やっぱり怖い、不安、恥ずかしい……」そんな胸の奥にしまい込んだ本音を、あなたの代わりに相手のDMへそっと届けるBotです。直接言うのは躊躇われる感謝や、文字だからこそ伝えられる大切なメッセージを形にします。</p>
                 </div>
             </div>
-            <a href="https://discord.com/oauth2/authorize?client_id=1001480823943467129" target="_blank" class="bot-link">サーバーに招待する</a>
+            <a href="https://discord.com" target="_blank" class="bot-link">サーバーに招待する</a>
+        </div>
+
+        <div class="bot-card">
+            <div class="bot-info">
+                <div class="bot-name">彩り役職</div>
+                <div class="bot-desc">
+                    <p>Discordサーバーのロールを、もっと自由に、もっと鮮やかに。簡単操作で、あなただけのカスタムロールを作成・管理できます。</p>
+                </div>
+            </div>
+            <a href="https://discord.com/oauth2/authorize?client_id=1517741618369921034" target="_blank" class="bot-link">サーバーに招待する</a>
         </div>
 
     </div>
